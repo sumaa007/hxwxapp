@@ -1,13 +1,30 @@
 {
   "pages": [
-    "pages/index/main",
-    "pages/logs/main",
-    "pages/counter/main"
+		"pages/topics/main",
+		"pages/users/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
-  }
+  },
+	  "tabBar": {
+    "list": [{
+      "pagePath": "pages/topics/main",
+      "text": "帖子",
+			"iconPath": "/static/images/index.png",
+      "selectedIconPath": "/static/images/index_selected.png"
+    }, {
+      "pagePath": "pages/users/main",
+      "text": "我的",
+			"iconPath": "/static/images/user.png",
+			"selectedIconPath": "/static/images/user_selected.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
 }

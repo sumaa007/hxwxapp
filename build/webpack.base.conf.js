@@ -22,7 +22,9 @@ function getEntry (rootSrc) {
    return map;
 }
 
-const appEntry = { app: resolve('./src/main.js') }
+const appEntry = { app: resolve('./src/main.js'),
+    'pages/users/main': resolve('./src/pages/users/main.js'),
+    'pages/topics/main': resolve('./src/pages/topics/main.js')}
 const pagesEntry = getEntry(resolve('./src'), 'pages/**/main.js')
 const entry = Object.assign({}, appEntry, pagesEntry)
 
